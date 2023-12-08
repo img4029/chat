@@ -62,4 +62,5 @@ main {
     align-items: center;
     position: absolute;
     bottom: 0;
+    cursor: pointer;
 }
