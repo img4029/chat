@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./signup.css">
+    <script defer src="./signup.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAhfYekyweKqeSkx4rQSUrEKzimDDVnGTk",
+            authDomain: "chatting-ce893.firebaseapp.com",
+            projectId: "chatting-ce893",
+            storageBucket: "chatting-ce893.appspot.com",
+            messagingSenderId: "647796368440",
+            appId: "1:647796368440:web:3eacb11df33b705c0bb2cd",
+            measurementId: "G-3XPCV55T19",
+            messagingSenderId: "project-647796368440",
+            databaseURL: "https://chatting-ce893-default-rtdb.firebaseio.com/"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+    </script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="signUp">
+            <h1>회원가입</h1>
+            <div>
+                <h4>아이디</h4>
+                <div>
+                    <input type="text">
+                    <div>중복확인</div>
+                </div>
+            </div>
+            <div>
+                <h4>이름</h4>
+                <input type="text">
+            </div>
+            <div>
+                <h4>비밀번호</h4>
+                <input type="text">
+            </div>
+            <div>
+                <h4>비밀번호 확인</h4>
+                <input type="text">
+            </div>
+            <div>가입완료</div>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
