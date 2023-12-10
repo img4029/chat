@@ -1,17 +1,15 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 main {
-    /* max-height: 1480px;
-    max-width: 720px; */
     height: 740px;
     width: 500px;
     background-color: aqua;
-}
+} */
 .signUp {
-    padding: 50px 100px;
+    padding: 50px 80px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -33,24 +31,24 @@ main {
 .signUp>div>div>div{
     height: 30px;
     width: 70px;
-    background-color: white;
+    background-color: #6c757d;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
     font-weight: bold;
     border-radius: 5px;
-    border: 1px solid black;
     cursor: pointer;
 }
 .signUp>div>div>input {
     height: 30px;
 }
 .signUp>div:nth-child(6){
-    background-color:chartreuse;
+    background-color: #6c757d;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
