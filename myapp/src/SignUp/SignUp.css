@@ -60,3 +60,13 @@ main {
 input {
     padding-left: 5px;
 }
+.idmg,.namemg,.pwmg,.pw2mg{
+    color: red;
+    font-size: 12px;
+    line-height: 30px;
+}
+.idmgOk {
+    color: green;
+    font-size: 12px;
+    line-height: 30px;
+} 

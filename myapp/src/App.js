@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Modal } from "./Modal/Modal";
 import { SignUp } from "./SignUp/SignUp";
@@ -13,6 +13,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
     // const database = getDatabase();
     // const dbUser = ref(database, 'user/');
+    useEffect(() => {
+        console.log("실행되었다.");
+    }, []);
     const [myId, setMyId] = useState(""),
         [myPW, setMyPW] = useState("");
     const [modalOpen, setModalOpen] = useState(false)

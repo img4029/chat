@@ -8,7 +8,6 @@ export function ChatMessage() {
     const [allChat, setAllChat] = useState([]);
     const database = getDatabase();
     const dbChat = ref(database, 'chat/');
-    
     useMemo(() => {
         onValue(dbChat, (data) => {
             let allChatCg = [];
@@ -23,7 +22,7 @@ export function ChatMessage() {
         });
     }, [])
 
-    const chatList = allChat.map((chat,index) => {
+    const chatList = allChat.map((chat, index) => {
         return (
             <div key={index}>
                 <div>{chat.name}</div>
@@ -32,7 +31,5 @@ export function ChatMessage() {
         ) 
     })
     // console.log(chatList);
-    return (
-        <div className="chat">{chatList}</div>
-    );
+    return chatList;
 } 
