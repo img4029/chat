@@ -1,6 +1,5 @@
 import { getDatabase, ref, onValue} from "firebase/database";
 import { app } from "../firebase";
-// import { React } from 'react';
 import { useState, useMemo } from 'react';
 
 export function ChatMessage() { 
@@ -14,10 +13,8 @@ export function ChatMessage() {
             const chatData = data.val();
             
             for (const key in chatData) {
-                // console.log(chatData[key]);
                 allChatCg = [...allChatCg, chatData[key]]
             }
-            // console.log(allChatCg);
             setAllChat(allChatCg);
         });
     }, [])
@@ -30,6 +27,5 @@ export function ChatMessage() {
             </div>
         ) 
     })
-    // console.log(chatList);
     return chatList;
 } 

@@ -1,13 +1,10 @@
-// import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Modal } from "./Modal/Modal";
 import { SignUp } from "./SignUp/SignUp";
 import { app } from "./firebase";
-// import { getDatabase, ref, onValue } from "firebase/database";
 import { getDatabase, ref, child, get } from "firebase/database";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
